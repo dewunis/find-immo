@@ -1,0 +1,370 @@
+@import url("variables.css");
+@import url("resets.css");
+@import url("utils.css");
+
+.builder {
+  background-image: url("../images/new-project-bg.jpg");
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+}
+
+.builder-content {
+  max-height: calc(100vh - 0px);
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* Topbar start */
+.topbar {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.topbar .start .text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.topbar .start .text b {
+  font-weight: 800;
+}
+
+.topbar .end {
+  margin-left: 100px;
+}
+
+.topbar .end button {
+  background: linear-gradient(to right, #e56015, #fc7d62);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 10px 80px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+/* Hero Start */
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  display: flex;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.hero .start {
+  max-width: 480px;
+}
+
+.hero .title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+.hero .title u:hover,
+.investment .title u:hover {
+  background-size: 100% 1.1em;
+}
+
+.hero .title .anim-line,
+.investment .anim-line {
+  background-image: linear-gradient(to right, #e56015 0%, #e56015 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 85%;
+  transition: background-size 0.25s ease-in;
+  text-decoration: none;
+}
+
+.hero .start .paragraph {
+  font-size: 20px;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.hero .start svg {
+  fill: #fff;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+
+.hero .start button {
+  position: relative;
+  background: linear-gradient(to right, #e56015, #fc7d62);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 23px;
+  padding: 14px 60px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  border: 4px solid #fff;
+}
+
+.hero .start button:hover,
+.hero .start button:hover > svg {
+  color: #000;
+  fill: #000;
+  transition: 0.2s ease;
+}
+
+.hero .end {
+  max-width: 600px;
+  width: 100%;
+  margin-top: -80px;
+  margin-left: 40px;
+}
+
+.hero .end img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Investment Start */
+
+.investment {
+  display: flex;
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.investment::after,
+.investment::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+}
+
+.investment::before {
+  left: 0;
+  top: 0;
+  transform: skewY(2deg);
+}
+
+.investment .content {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content .title {
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content .paragraph-italic {
+  margin: 30px 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Cards Start */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  right: 0;
+  background-image: url("../images/linear-white-bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.cards .card {
+  display: flex;
+  align-items: start;
+}
+
+.card.card1 .card-img img {
+  width: 500px;
+  height: 500px;
+  margin-right: 60px;
+  margin-top: -80px;
+  object-fit: contain;
+}
+
+.card.card2 .card-img img {
+  width: 500px;
+  height: 500px;
+  margin-left: 40px;
+  margin-top: -80px;
+  object-fit: contain;
+}
+
+.card.card3 {
+  margin-top: 60px;
+}
+.card.card3 .card-img img {
+  width: 500px;
+  height: 500px;
+  margin-right: 60px;
+  object-fit: contain;
+}
+
+.card1 .card-text {
+  margin-top: -40px;
+  width: 460px;
+}
+
+.card .card-text p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card .card-text b {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.card-title h1 {
+  font-size: 50px;
+  word-spacing: 30px;
+  text-transform: uppercase;
+  color: #d1d1d1bd;
+}
+
+.good-choice {
+  margin: 40px auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.good-choice p{
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+}
+
+.good-choice p b {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.good-choice p:first-child {
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+.good-choice button {
+  margin-top: 60px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #e56015, #fc7d62);
+  color: #fff;
+  font-weight: 900;
+  font-size: 23px;
+  padding: 22px 80px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 39px 0px;
+  cursor: pointer;
+}
+
+/* Gift Start */
+
+.gift {
+  background-color: #2d2d2d;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift .content{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    border: 4px solid #baeffa;
+    border-radius: 8px;
+}
+
+.gift .start{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+.gift .start .title {
+  color: #baeffa;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.gift .start .paragraph{
+    font-size: 20px;
+    color: #fff;
+}
+
+.gift .start button{
+    position: relative;
+    background: linear-gradient(to right, #e56015, #fc7d62);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    font-size: 23px;
+    padding: 14px 40px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.gift .end img{
+    width: 320px;
+    height: 320px;
+}
